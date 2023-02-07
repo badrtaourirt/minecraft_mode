@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_close_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#9d000000">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:backgroundTint="@color/White"
+        android:background="@drawable/pribox">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/ptop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:gravity="center"
+                android:fontFamily="@font/fontbold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Privacy Policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/ptop"
+            android:layout_above="@+id/pbottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+
+                        android:fontFamily="@font/akrobat"
+                        android:text="This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/akrobat"
+                        android:text="If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+
+                        android:fontFamily="@font/akrobat"
+                        android:text="The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at unless otherwise defined in this Privacy Policy."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+
+                        android:fontFamily="@font/akrobat"
+                        android:text="For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pbottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAccept"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                style="@style/AppTheme.Btn"
+                android:fontFamily="@font/akrobat"
+                android:gravity="center"
+                android:text="Close"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

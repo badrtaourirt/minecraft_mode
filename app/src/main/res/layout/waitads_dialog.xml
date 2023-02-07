@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="#0c000000" android:paddingLeft="35dp" android:paddingRight="35dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/pub_btn" android:background="@drawable/rnd_up" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18dp" android:textColor="#3d3d3d" android:gravity="center" android:paddingLeft="18dp" android:paddingTop="18dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="LOADING ADS..." android:layout_weight="1.0" android:fontFamily="@font/craft"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rnd_bottomtotal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/equalizer" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/progress"/>
+    </LinearLayout>
+</LinearLayout>
