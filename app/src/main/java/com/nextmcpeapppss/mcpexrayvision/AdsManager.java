@@ -103,6 +103,8 @@ public class AdsManager {
     private String DecryptionKey = "ot6dI3SiBZ6IbW5tPOtvJ1d0x2WgZB1F";
     private String AppPackage = BuildConfig.APPLICATION_ID;
     private String BASE_URL = "https://dailydoseofquotes.com/apps/app1.json";
+
+    public static String VPN_CONTROLLER_JSON_LINK = "https://json.irondev.center/test/webview_vpn_controller.json";
     private long secondsRemaining;
 
     public AdsManager(Context _context, Activity _Activity, AdsManagerListener mAdslistner){
